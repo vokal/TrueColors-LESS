@@ -1,0 +1,27 @@
+{
+  "name": "truecolors-less",
+  "version": "1.0.0",
+  "description": "Ouptuts LESS for .trucolors files",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "testcover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vokal/TrueColors-LESS.git"
+  },
+  "keywords": [
+    "truecolors",
+    "less"
+  ],
+  "author": "Vokal",
+  "bugs": {
+    "url": "https://github.com/vokal/TrueColors-LESS/issues"
+  },
+  "homepage": "https://github.com/vokal/TrueColors-LESS#readme",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "mocha": "^2.2.5"
+  }
+}
