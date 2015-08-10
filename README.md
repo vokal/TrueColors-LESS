@@ -10,4 +10,4 @@ Convert a .truecolors format file to a LESS document.
 
 ### `convertColor` = function ( hex )
 
-### `lessModel` = function ()
+### `lessModel` = new function ()
