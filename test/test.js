@@ -31,4 +31,13 @@ describe( "TrueColors", function ()
             done();
         } );
     } );
+
+    it( "should have err callback when file is missing", function ( done )
+    {
+        colors.translatePath( "/readme.md", function ( err )
+        {
+            assert( !!err );
+            done();
+        } );
+    } );
 } );
