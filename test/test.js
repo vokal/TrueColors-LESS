@@ -13,9 +13,14 @@ describe( "TrueColors", function ()
         assert.equal( colors.convertColor( "#FFFE1000" ), "rgba(255,254,16,0)" );
     } );
 
+    it( "should slugify", function ()
+    {
+        assert.equal( colors.slugify( [ "Primary", "Button*Text", "&Thing" ] ), "primary-button-text-thing" );
+    } );
+
     it( "should process a file", function ( done )
     {
-        var fontString = ".fullMedText {\n"
+        var fontString = ".full-med-text {\n"
             + "\tfont-family: Cantarell-Regular;\n"
             + "\tfont-size: globalFontLg;\n"
             + "\tcolor: White;\n"
@@ -25,8 +30,9 @@ describe( "TrueColors", function ()
         colors.translatePath( assetPath, function ( err, result )
         {
             assert( !err );
-            assert.equal( result.indexOf( "@Framework: #1898F6;" ) !== -1, true  );
-            assert.equal( result.indexOf( "@globalFontReg: 14px;" ) !== -1, true  );
+            assert.equal( result.indexOf( ".user-cards-geoteriary-text {" ) !== -1, true );
+            assert.equal( result.indexOf( "@framework: #1898F6;" ) !== -1, true  );
+            assert.equal( result.indexOf( "@global-font-reg: 14px;" ) !== -1, true  );
             assert.equal( result.indexOf( fontString ) !== -1, true  );
             done();
         } );
