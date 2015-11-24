@@ -21,7 +21,7 @@ describe( "TrueColors", function ()
     it( "should process a file", function ( done )
     {
         var fontString = ".full-med-text() {\n"
-            + "\tfont-family: Cantarell-Regular;\n"
+            + "\tfont-family: \"Cantarell-Regular\";\n"
             + "\tfont-size: @global-font-lg;\n"
             + "\tcolor: @white;\n"
             + "}";
