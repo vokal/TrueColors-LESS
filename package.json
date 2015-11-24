@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/vokal/TrueColors-LESS#readme",
   "dependencies": {
-    "adm-zip": "^0.4.7",
+    "adm-zip": "^0.4.7"
+  },
+  "devDependencies": {
     "mocha": "^2.2.5"
   }
 }
