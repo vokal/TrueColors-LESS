@@ -1,0 +1,16 @@
+{
+    "requireDotNotation": {
+        "allExcept": ["snake_case", "keywords"]
+    },
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "maximumLineLength": 120,
+    "requireSpacesInsideBrackets": true,
+    "requireSpacesInsideParentheses": {
+        "all": true,
+        "except": [ "(", ")", "{", "}", "[", "]", "function" ]
+    },
+    "validateQuoteMarks": true,
+    "disallowTrailingWhitespace": true,
+    "requireSemicolons": true
+}
