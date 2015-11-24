@@ -22,14 +22,14 @@ describe( "TrueColors", function ()
     {
         var fontString = ".full-med-text {\n"
             + "\tfont-family: Cantarell-Regular;\n"
-            + "\tfont-size: globalFontLg;\n"
-            + "\tcolor: White;\n"
+            + "\tfont-size: @global-font-lg;\n"
+            + "\tcolor: @white;\n"
             + "}";
 
         var assetPath = path.join( process.cwd(), "./test/assets/ht.truecolors" );
         colors.translatePath( assetPath, function ( err, result )
         {
-            assert( !err );
+            assert.equal( err, null );
             assert.equal( result.indexOf( ".user-cards-geoteriary-text {" ) !== -1, true );
             assert.equal( result.indexOf( "@framework: #1898F6;" ) !== -1, true  );
             assert.equal( result.indexOf( "@global-font-reg: 14px;" ) !== -1, true  );
