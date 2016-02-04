@@ -1,6 +1,6 @@
 {
   "name": "truecolors-less",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Ouptuts LESS for .trucolors files",
   "main": "lib/index.js",
   "scripts": {
