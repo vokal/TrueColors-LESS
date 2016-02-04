@@ -33,6 +33,7 @@ describe( "TrueColors", function ()
             assert.equal( result.indexOf( ".user-cards-geoteriary-text() {" ) !== -1, true );
             assert.equal( result.indexOf( "@framework: #1898F6;" ) !== -1, true  );
             assert.equal( result.indexOf( "@global-font-reg: 14px;" ) !== -1, true  );
+            assert.equal( result.indexOf( "font-size: @global-font-reg;" ) !== -1, true  );
             assert.equal( result.indexOf( fontString ) !== -1, true  );
             done();
         } );
