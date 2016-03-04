@@ -1,9 +1,10 @@
 language: node_js
 node_js:
   - "node"
-global:
-  - REPO_OWNER=vokal
-  - REPO_NAME=TrueColors-LESS
+env:
+  global:
+    - REPO_OWNER=vokal
+    - REPO_NAME=TrueColors-LESS
 install:
   - npm install -g istanbul
   - npm install
