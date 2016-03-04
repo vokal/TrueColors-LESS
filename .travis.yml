@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "node"
-env:
+global:
   - REPO_OWNER=vokal
   - REPO_NAME=TrueColors-LESS
 install:
