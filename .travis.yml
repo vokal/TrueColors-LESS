@@ -7,4 +7,6 @@ global:
 install:
   - npm install -g istanbul
   - npm install
-script: ./run-build.sh
+script:
+  - chmod +x run-build.sh
+  - ./run-build.sh
