@@ -16,6 +16,7 @@ describe( "TrueColors", function ()
     it( "should slugify", function ()
     {
         assert.equal( colors.slugify( [ "Primary", "Button*Text", "&Thing" ] ), "primary-button-text-thing" );
+        assert.equal( colors.slugify( [ "Extra XXL" ] ), "extra-xxl" );
     } );
 
     it( "should process a file", function ( done )
